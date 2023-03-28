@@ -4,6 +4,7 @@ Is a simple game in Python. I wrote it at my first year at the university as pro
 
 ## Rules
 
+0. Install libraries with command `$ pip install -r requirements.txt`.
 1. Run the "run.py" file.
 2. Click "Enter name" to add your nick.
 3. Clcik "Play".
