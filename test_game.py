@@ -1,19 +1,14 @@
-import bad_mushroom
-import basket
-import mushrooms
-import run_ob
 from functions import *
 from settings import *
-from run_ob import *
+from run import *
 
-#funkcje do testowania testów:)
-def kopia(list):
-    kopia=[]
+def copyList(list):
+    copy=[]
     for i in list:
-        kopia.append(i)
-    return kopia
+        copy.append(i)
+    return copy
 
-def max_elem(list):
+def max_elem():
     file = open("scores.txt", "r+")
     lines = file.readlines()
     for line in lines:
@@ -60,7 +55,7 @@ def test_2_lb_read():
 
 def test_rev_list():
     lista = [2,11,8,5,4,7,13,2]
-    lista2 = kopia(lista)
+    lista2 = copyList(lista)
     lista2.reverse()
     assert lista2 == rev_list(lista)
 
@@ -69,8 +64,3 @@ def test_CONST():
     assert str(type(SCREEN_SIZE)) == "<class 'tuple'>"
     assert str(type(FONT_SIZE))== "<class 'int'>"
     assert str(type(CAPTION)) == "<class 'str'>"
-
-
-
-
-
